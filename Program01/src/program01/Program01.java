@@ -9,6 +9,9 @@ package program01;
  *
  * @author User
  */
+
+import java.util.Scanner;
+
 public class Program01 {
 
     /**
@@ -16,6 +19,15 @@ public class Program01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        double n1, prod;
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.println("Enter the temperature in degrees Celsius: ");
+        n1 = keyboard.nextDouble();
+        
+        prod = (9.0/5.0) * n1 + 32.0;
+        System.out.println("The temperature in degress Farenheit is: " + prod);
+   
     }
     
 }
